@@ -1,0 +1,38 @@
+{
+  "repo": {
+    "owner": "jrtorres",
+    "repo":  "bob-labs-june2026",
+    "branch": "ghpages"
+  },
+  "top": [
+    { "id": "home", "label": "Overview", "path": "README.md" }
+  ],
+  "header": [
+    { "id": "prerequisites", "label": "Prerequisites", "path": "PREREQUISITES.md" }
+  ],
+  "groups": [
+    {
+      "label": "Core Labs",
+      "items": [
+        { "id": "lab-1", "label": "Lab 1: Bob Fundamentals", "path": "labs/bob-lab-1-fundamentals.md" },
+        { "id": "lab-2", "label": "Lab 2: Modes & Skills",   "path": "labs/bob-lab-2-modes-skills/bob-lab-2-modes-skills.md" },
+        { "id": "lab-3", "label": "Lab 3: Simple App",       "path": "labs/bob-lab-3-simple-app-development/README.md" }
+      ]
+    },
+    {
+      "label": "Extra Labs",
+      "items": [
+        { "id": "app-analysis", "label": "Application Analysis", "path": "extra-labs/application-analysis/README.md" },
+        { "id": "bob-mcp",      "label": "Bob MCP",              "path": "extra-labs/bob-mcp/README.md" },
+        { "id": "bob-shell",    "label": "Bob Shell",            "path": "extra-labs/bob-shell/README.md" },
+        { "id": "python-to-js", "label": "Python to JavaScript", "path": "extra-labs/python-to-javascript/README.md" }
+      ]
+    }
+  ],
+  "resources": [
+    { "id": "tips-tricks",     "label": "Bob Tips & Tricks",   "path": "resources/Bob-tips-and-tricks.md" },
+    { "id": "differentiators", "label": "Bob Differentiators", "path": "resources/bob-differentiators.md" },
+    { "id": "productivity",    "label": "Productivity Gains",  "path": "resources/bob-productivity-gains-client-zero.md" },
+    { "id": "modes-vs-skills", "label": "Modes vs Skills",     "path": "resources/modes-vs-skills.md" }
+  ]
+}
