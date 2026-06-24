@@ -21,7 +21,7 @@ These labs guide you through Bob's core capabilities in a logical progression. E
 - Tailor Bob's behaviour to specific tasks
 
 **Build Something Real** (Lab 3)
-- Use Bob's Plan, Agent, and Ask modes together
+- Use Bob's Plan, Code, Advanced, and Ask modes together
 - Build a complete full-stack application from scratch
 
 ### Lab Summary
@@ -97,7 +97,7 @@ These labs guide you through Bob's core capabilities in a logical progression. E
 
 #### What You'll Learn
 
-- Use Bob's Plan, Agent, and Ask modes together on a real project
+- Use Bob's Plan, Code, Advanced, and Ask modes together on a real project
 - Enable auto-approvals for rapid development
 - Practice literate coding techniques
 - Build a complete full-stack application from scratch

@@ -33,7 +33,7 @@ The labs is organized into two sections:
 |---|-----|----------|----------------|
 | 1 | [Bob Fundamentals](labs/README.md#1-bob-fundamentals) | ~20 min | Learn Bob's interface, modes, and approval workflow |
 | 2 | [Modes & Skills](labs/README.md#2-modes--skills) | ~15 min | Create custom modes, skills, and slash commands |
-| 3 | [Building a Simple Application](labs/README.md#3-building-a-simple-application) | ~40 min | Build a full-stack todo app using Bob's Plan, Agent, and Ask modes |
+| 3 | [Building a Simple Application](labs/README.md#3-building-a-simple-application) | ~40 min | Build a full-stack todo app using Bob's Plan, Code, Advanced and Ask modes |
 
 ➡️ **[View full lab details and prerequisites →](labs/README.md)**
 

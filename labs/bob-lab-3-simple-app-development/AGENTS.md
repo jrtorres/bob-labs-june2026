@@ -39,7 +39,7 @@ These are the default technology choices for the application being built. Confir
 - Save any plan artifacts (plan files, architecture notes) into `todo-starter/`
 - If building an application with a frontend and backend, make sure the plan created contains separate sub-tasks called out for backend and frontend.
 
-### Agent mode (code generation)
+### Code mode (code generation)
 
 - All generated files must be placed inside `todo-starter/` under the appropriate subdirectory (`backend/` or `frontend/`)
 - Do not generate files outside `todo-starter/`

@@ -55,10 +55,6 @@ They define:
 - Pre-defined prompts and templates
 - When to use the mode
 
-![](/images/bob_modes.png)
-
-![](/images/bob_mode_edit.png)
-
 ### Creating Custom Modes
 
 Custom modes live in `.bob/custom_modes.yaml` (project-scoped) or `~/.bob/custom_modes.yaml` (global). The file uses `customModes:` and each entry is one mode.
@@ -115,8 +111,6 @@ In this exercise you will install the Architecture Design mode and use the same 
 1. Bob will ask you a few clarifying questions. For the purposes of this experiment, answer the question as you see fit. Once Bob has enough information, it will create the plan for the new service.
 
 1. Take a moment to note the shape of the response: how it is structured, what topics it covers, and what it leaves out.
-
-    ![](/images/bob_mode_lab_arch1.png)
 
 #### Use a Custom Architecture Design mode
 
@@ -191,8 +185,6 @@ In this exercise you will install the Architecture Design mode and use the same 
 
 1. Answer any clarifying questions from Bob.
 
-    ![](/images/bob_mode_lab_arch2.png)
-
 1. Then review / compare the output using this custom mode versus the out of the box mode. Look for these specific differences:
 
     | What to look for | Plan mode (no custom mode) | 🏗️ FSM Architecture Design |
@@ -219,7 +211,7 @@ In this exercise you will install the Architecture Design mode and use the same 
 - **Slash Commands**: Prompts that you explicitly run by typing `/command-name` in chat
 - **Both**: Can be stored in the project and shared with your team through version control
 
-> **Important:** Skills are available only in modes that support skills.
+> **Important:** Skills are available only in modes that support skills (Advanced and Custom).
 
 ### Skills vs. Slash Commands
 
@@ -233,17 +225,13 @@ In this exercise you will install the Architecture Design mode and use the same 
 
 **Simple rule:** Use a **skill** when Bob should recognize when a workflow applies. Use a **slash command** when the user should choose exactly when to run it.
 
-![](/images/bob_skills.png)
-
-![](/images/bob_skills_details.png)
-
 > 📌 **Official Documentation:** [Skills](https://bob.ibm.com/docs/ide/features/skills) | [Slash Commands](https://bob.ibm.com/docs/ide/features/slash-commands)
 
 ### Creating a Skill
 
 In this exercise, you will create a small skill that explains code in beginner-friendly language. You will test it against [`app/loan_calculator.py`](app/loan_calculator.py), a simple financial services script included in this lab.
 
-1. Switch to `Agent` mode in bob.
+1. Switch to `Advanced` mode in bob.
 
 1. Create this project folder and file:
 
@@ -279,8 +267,6 @@ In this exercise, you will create a small skill that explains code in beginner-f
 
 1. When Bob asks to activate the skill, approve it. Confirm that the response includes a short summary, explains each function, and defines financial terms like *amortization* in plain language.
 
-    ![](/images/bob_mode_lab_skill1.png)
-
 > **Note:** Bob loads a skill once per conversation. Start a new conversation if you change the skill and want to test the updated instructions.
 
 ---
@@ -293,20 +279,16 @@ In this exercise, you will create a command that summarizes any file you name.
 
     ```text
     .bob/
-    └── skills/
-        └── summarize-file/
-            └── SKILL.md
+    └── commands/
+        └── summarize-file.md
     ```
 
-1. Add the following to `.bob/skills/summarize-file/SKILL.md`:
+1. Add the following to `.bob/commands/summarize-file.md`:
 
     ```markdown
     ---
     description: Summarize a file in the current project
     argument-hint: <file-path>
-    metadata:
-        user-invocable: true
-        disable-model-invocation: true
     ---
 
     Read $1 and provide:
@@ -319,7 +301,7 @@ In this exercise, you will create a command that summarizes any file you name.
 
     The optional `description` appears in the command menu. The `argument-hint` shows what to enter, and `$1` represents the first argument supplied to the command.
 
-1. The difference with the prior usage of Skills is we are allowing this `command` to be directly called by an end-user and disabling it from the Skills available to the LLMs.
+1. The difference with the prior usage of Skills is we are allowing this `command` to be directly called by an end-user.
 
 1. Run the command in Bob chat:
 

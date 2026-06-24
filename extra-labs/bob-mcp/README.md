@@ -112,10 +112,6 @@ Before starting, ensure you have:
     - Project MCPs: `.bob/mcp.json` in project root
 3. Edit the JSON configuration
 
-![](/images/bob_mcps.png)
-
-![](/images/bob_mcp_detail.png)
-
 ```json
 {
   "mcpServers": {

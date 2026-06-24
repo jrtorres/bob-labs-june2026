@@ -129,7 +129,7 @@ Save this as ARCHITECTURE.md in the app directory.
 
 1. Note that Bob should have enough context to create the architecture documentation for you. Bob may ask you to confirm its plan before writing the actual markdown file.
 
-> **Note:** Bob will ask to switch to Agent mode to write the file, approve the request.
+> **Note:** Bob will ask to switch to Code mode to write the file, approve the request.
 
 1. Feel free to review the `ARCHITECTURE.md` document. Bob was able to generate not just descriptions for the source code files, but a higher level system architecture, information about data model, APIs and requirements.
 
@@ -185,7 +185,7 @@ For each invariant, explain:
 Write these requirements, assumptions and invariants to a new solution documentation markdown file. Include any tables and diagrams that were already generated.
 ```
 
-1. Bob will ask for approval to switch to **Agent** mode and write the file. Review the generated solution document, it will have all the requirements, business rules and assumptions Bob was able to find in the application. Combined with the Architecture document, Bob has given us a solid understanding of this application.
+1. Bob will ask for approval to switch to **Code** mode and write the file. Review the generated solution document, it will have all the requirements, business rules and assumptions Bob was able to find in the application. Combined with the Architecture document, Bob has given us a solid understanding of this application.
 
 ---
 
@@ -303,7 +303,7 @@ Each step builds on the previous one and mirrors how security audits are conduct
 
 1. While we could use Bob to create a plan to address all the security vulnerabiltiies that have been identified. For the purpose of this lab, we will showcase how Bob can help us address one of these issues. For now, we are going to fix the SQL Injection vulnerability.
 
-1. Switch to **Agent Mode** for this step. Agent mode can read the vulnerable files, apply all fixes, and write the secure versions directly.
+1. Switch to **Code Mode** for this step. Code mode can read the vulnerable files, apply all fixes, and write the secure versions directly.
 
 1. Ask Bob to fix the SQL Injection issue: 
 

@@ -43,7 +43,7 @@ By the end of this lab, you will:
 
 - ✅ Use Ask mode to analyze source code
 - ✅ Use Plan mode to plan translation strategy
-- ✅ Use Agent mode to implement translation
+- ✅ Use Code mode to implement translation
 - ✅ Understand language-specific patterns
 - ✅ Map Python features to JavaScript equivalents
 - ✅ Maintain code functionality across languages
@@ -83,8 +83,6 @@ Before starting, ensure you have:
     3. What Python-specific features are being used?
     4. What are the key data structures and algorithms?
     ```
-
-    ![](/images/bob_py2js_lab_1.png)
 
     Approve requests from Bob. Then Bob should explain:
 
@@ -133,11 +131,19 @@ Before starting, ensure you have:
     5. File structure for the JavaScript version
     ```
 
-1. Bob should respond with a mapping of the Python features to their JavaScript equivalents. **If** Bob asks clarifying questions, answer based on the feedback from Bob on the translation challenges response above.
-    - CommonJS to simplify module dependencies
-    - Classes approach to mirror Python implementation
-    - Async/await to mirror the Python implementation
+1. Bob should respond with a mapping of the Python features to their JavaScript equivalents. 
 
+1. Lets use Bob to plan the target module structure. Still in **Plan Mode**, prompt Bob with the following:
+
+    ```text
+    Design the JavaScript module structure for the translated code.
+    Should we use:
+    - ES6 modules or CommonJS?
+    - Classes or functional approach?
+    - Async/await or promises?
+    - Any additional error handling?
+    ```
+    
 1. Identify the recommended JavaScript patterns and libraries/modules, prompt Bob with:
 
     ```text
@@ -152,7 +158,7 @@ Before starting, ensure you have:
     - Create a package.json file for the Javascript data processor with name, version, dependencies, main entry point, and scripts for running the processor
     - Translate the entire DataProcessor class from Python to JavaScript. Including constructor, methods, JSDoc comments, async/await, error handling, and main execution logic.
 
-1. We are going to follow the plan we asked Bob to build. Change to **Agent Mode** (💻) and **prompt Bob:**
+1. We are going to follow the plan we asked Bob to build. Change to **Code Mode** (💻) and **prompt Bob:**
 
     ```text
     Go ahead and implement the translation plan. Store the translated content to a translated-js-version folder.

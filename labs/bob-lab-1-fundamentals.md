@@ -40,7 +40,7 @@ By the end of this lab, you will:
 ### Why Bob?
 
 > **🎯 Bob Differentiator: Multi-Mode Intelligence**
-> Unlike other AI assistants that use a one-size-fits-all approach, Bob provides specialized modes optimized for different tasks. Plan mode helps you design before coding, Agent mode implements your ideas, and Ask mode explains concepts. This separation ensures Bob gives you the right type of help at the right time.
+> Unlike other AI assistants that use a one-size-fits-all approach, Bob provides specialized modes optimized for different tasks. Plan mode helps you design before coding, Code or Advanced mode implements your ideas, and Ask mode explains concepts. This separation ensures Bob gives you the right type of help at the right time.
 
 ---
 
@@ -95,8 +95,6 @@ If you are new to chat-based tools, click once in the message box at the bottom 
 
 After Bob replies, pause and read the full response before typing again. Bob may ask for approval before taking actions. We cover that in a later section, but for this first interaction it is enough to allow the step if it matches what you asked for.
 
-![](/images/bob_chat1.png)
-
 **Try this:**
 ```text
 Hi Bob! I'm new here. Can you tell me 3 things you can help me with?
@@ -128,8 +126,6 @@ When Bob wants to make changes, it:
 3. Waits for your approval before proceeding
 4. Only makes changes after you confirm
 
-   ![](/images/bob_approval_chat.png)
-
 This means you do not need to worry about Bob silently changing files in the background during this lab.
 
 ### Best Practices for Approvals
@@ -150,9 +146,9 @@ This means you do not need to worry about Bob silently changing files in the bac
 
 > 📁 **Sandbox convention:** Throughout this lab every scratch file you create with Bob will live under `labs/sandbox/` so the workshop repo stays tidy. You can delete this directory as the final step of the lab.
 
-Before practicing approvals, ask Bob to create the sandbox directory. **In Agent mode:**
+Before practicing approvals, ask Bob to create the sandbox directory. **In Code mode:**
 
-If you are not sure whether you are in Agent mode, check the mode selector before sending the prompt.
+If you are not sure whether you are in Code mode, check the mode selector before sending the prompt.
 
 ```text
 Create an empty directory at labs/sandbox/
@@ -164,10 +160,8 @@ Approve the action when Bob prompts. All subsequent file-creation exercises in t
 
 Now let's practice the approval workflow with an actual file.
 
-**[Insert image here: approval prompt showing the target file path, preview of the change, and the Approve/Reject buttons.]**
-
 **Step 1: Simple File Creation**
-In Agent mode, ask Bob:
+In Code mode, ask Bob:
 ```text
 Create a file at labs/sandbox/hello.txt with the text "Hello from Bob"
 ```
@@ -203,10 +197,6 @@ Create a file at labs/sandbox/hello.txt with the text "Hello from Bob"
 2. Enable the options you want for the current session
 3. Bob will be able to complete repeated actions more quickly
 4. Review the results when complete
-
-   ![](/images/bob_permissions.png)
-
-An alternative is to approve actions one step at a time during a single task if you want tighter control over what Bob is allowed to do.
 
 > 📌 **Learn More:** [Managing approvals](https://bob.ibm.com/docs/ide/features/auto-approving-actions)
 
@@ -248,7 +238,7 @@ Plan the database schema for an e-commerce application
 What's the best architecture for a microservices-based system?
 ```
 
-#### 🤖 Agent Mode
+#### 🤖 Code Mode
 **When to use:** Writing, modifying, or refactoring code
 
 **Perfect for:**
@@ -294,8 +284,6 @@ Why is this code throwing a NullPointerException?
 
 ### Switching Between Modes
 
-![](/images/bob_modes.png)
-
 **To switch modes:**
 1. Look for the mode selector near the lower-left area of the Bob window
 2. Click it once to open the list of available modes
@@ -303,12 +291,12 @@ Why is this code throwing a NullPointerException?
 4. Select the mode you need
 5. Bob adapts its behavior immediately
 
-If you are unsure which mode to pick, start with Ask mode when you want an explanation, Plan mode when you want help thinking through a task, and Agent mode when you want Bob to create or change files.
+If you are unsure which mode to pick, start with Ask mode when you want an explanation, Plan mode when you want help thinking through a task, and Code or Advanced mode when you want Bob to create or change files.
 
 A good beginner habit is to say out loud what you want before choosing the mode:
 - `I want an explanation` → Ask mode
 - `I want help thinking this through` → Plan mode
-- `I want Bob to make or change something` → Agent mode
+- `I want Bob to make or change something` → Code mode
 
 ### Mode Practice Exercise
 
@@ -336,8 +324,8 @@ What are the key differences between SQL and NoSQL databases, and when should I 
 - Bob compares and contrasts concepts
 - Bob helps you understand, not just implement
 
-**Step 3: Agent Mode**
-Switch to Agent mode and ask:
+**Step 3: Code Mode**
+Switch to Code mode and ask:
 ```text
 Create and validate a simple Python function that validates email addresses using regex
 ```
@@ -382,7 +370,7 @@ I want to add a user profile feature to my application. Help me plan:
 
 ### Exercise 2: Creating Files
 
-**Switch to Agent Mode** for these quick exercises:
+**Switch to Code Mode** for these quick exercises:
 
 Move through these one at a time. Wait for Bob to finish each step before starting the next one.
 
@@ -421,7 +409,7 @@ Explain what each file in labs/sandbox/ does in simple terms:
 
 ### Exercise 4: Making Improvements
 
-**Back to Agent Mode:**
+**Back to Code Mode:**
 
 This step helps you practice going back and forth between understanding something and improving it.
 
@@ -442,7 +430,7 @@ Include a comment explaining why error handling is important here.
 
 ### Bob's Modes
 - **Plan Mode**: Design and strategize before coding
-- **Agent Mode**: Implement features and make changes
+- **Code Mode**: Implement features and make changes
 - **Ask Mode**: Learn and understand concepts
 - **Custom Modes**: Create specialized modes for your workflows ([Learn more](../resources/bob-differentiators.md#customizable-modes))
 
@@ -499,7 +487,7 @@ Please simplify this to beginner-friendly code with minimal features
 
 **Quick reference:**
 - Planning/designing → **Plan mode**
-- Creating/editing code → **Agent mode**
+- Creating/editing code → **Code mode**
 - Learning/understanding → **Ask mode**
 
 ### I don't understand the code
@@ -551,6 +539,6 @@ Now that you understand Bob's fundamentals, you're ready to:
 
 ---
 
-**Lab 1 Complete! 🎉**
+**Lab Complete! 🎉**
 
 You've mastered Bob's fundamentals through practical, hands-on exercises. You're now ready to apply these skills to any development project and explore Bob's advanced capabilities.
