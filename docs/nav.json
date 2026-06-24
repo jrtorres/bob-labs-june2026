@@ -2,7 +2,7 @@
   "repo": {
     "owner": "jrtorres",
     "repo":  "bob-labs-june2026",
-    "branch": "ghpages"
+    "branch": "main"
   },
   "top": [
     { "id": "home", "label": "Overview", "path": "README.md" }
